@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message TimePb {
+    string date = 1;
+    string month = 2;
+    string year = 3;
+    int64 milliseconds =4;
+    string formattedDate = 5;
+    TimeZoneEnum timezone =6;
+}
+
+enum TimeZoneEnum{
+    UNKNOWN_TIME_ZONE = 0;
+    IST=1;
+    UTC=2;
+}
